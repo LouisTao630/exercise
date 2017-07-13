@@ -9,9 +9,11 @@ Some exercise code.
 - 快速排序（QuickSort.java）
 
 ## 常用设计模式
-常用的设计模式练习代码路径为：`com.louis.tool.pattern.proxyPattern`
+常用的设计模式练习代码路径为：`com.louis.tool.pattern`
 
 ### 代理模式
+
+代码路径：`com.louis.tool.pattern.proxyPattern`
 
 - 静态代理
 - JDK动态代理
