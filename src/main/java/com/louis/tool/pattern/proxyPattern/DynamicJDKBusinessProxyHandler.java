@@ -19,12 +19,7 @@ public class DynamicJDKBusinessProxyHandler implements InvocationHandler {
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		writeLog(method);
 		return method.invoke(ba, args);
-	}
-
-	private void writeLog(Method method) {
-		System.out.println(method.getName() + " will invoked.");
 	}
 
 }
