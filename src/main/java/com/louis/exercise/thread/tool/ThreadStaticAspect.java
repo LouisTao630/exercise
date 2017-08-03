@@ -1,4 +1,4 @@
-package com.louis.tool.thread;
+package com.louis.exercise.thread.tool;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -6,14 +6,14 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
-public class ThreadMonitor {
+public class ThreadStaticAspect {
 
-	@Pointcut("excution(** *.run())")
+	@Pointcut("execution(public * call())")
 	public void monitThread() {
 	}
 
 	@Around("monitThread()")
-	public void caculateTime(ProceedingJoinPoint jp) {
+	public void statics(ProceedingJoinPoint jp) {
 		long beginTime = System.currentTimeMillis();
 		try {
 			jp.proceed();
@@ -22,12 +22,6 @@ public class ThreadMonitor {
 		}
 		long endTime = System.currentTimeMillis();
 
-		long time = endTime - beginTime;
-		String threadName = Thread.currentThread().getName();
-		String methodName = jp.getSignature().getName();
-		
-		System.out.println(time);
-		System.out.println(threadName);
-	}
+		System.out.println(String.format("threadName=%s,beginTime=%d,endTime=%d,expiredTime=%d", Thread.currentThread().getName(), beginTime, endTime, endTime - beginTime));	}
 
 }
