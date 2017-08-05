@@ -1,4 +1,4 @@
-package com.louis.exercise.thread.cfg;
+package com.louis.exercise.cfg;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;

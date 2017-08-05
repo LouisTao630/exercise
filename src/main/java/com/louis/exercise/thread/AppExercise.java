@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.louis.exercise.thread.cfg.ExerciseThreadConfig;
+import com.louis.exercise.cfg.ExerciseThreadConfig;
 
 public class AppExercise {
 
