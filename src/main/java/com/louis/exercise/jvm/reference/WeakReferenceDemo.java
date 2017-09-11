@@ -43,7 +43,7 @@ public class WeakReferenceDemo {
 		System.gc();
 
 		// 等待完成一次GC
-		Thread.sleep(3000);
+		Thread.sleep(300000);
 
 		// 打印模拟资源是否被释放
 		logger.info("GC调用之后...");

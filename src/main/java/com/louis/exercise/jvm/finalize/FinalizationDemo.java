@@ -1,7 +1,6 @@
 package com.louis.exercise.jvm.finalize;
 
 import java.lang.ref.PhantomReference;
-import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 
 /**
