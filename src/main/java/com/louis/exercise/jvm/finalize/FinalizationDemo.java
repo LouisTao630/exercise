@@ -29,6 +29,8 @@ public class FinalizationDemo {
 		test = null;
 
 		System.gc();
-		
+		System.out.println(reference.isEnqueued());
+		Thread.currentThread().sleep(10000);
+		System.out.println(reference.isEnqueued());
 	}
 }
