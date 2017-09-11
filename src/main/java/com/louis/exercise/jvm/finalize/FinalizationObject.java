@@ -1,10 +1,10 @@
 package com.louis.exercise.jvm.finalize;
 
-class FinalizationObject {
+public class FinalizationObject {
 
 	@Override
 	protected void finalize() throws Throwable {
-		System.out.println("FinalizationObject is finalized.");
+		System.out.println("This object  is finalized.");
 		super.finalize();
 	}
 
