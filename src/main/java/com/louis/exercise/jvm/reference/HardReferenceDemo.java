@@ -29,10 +29,10 @@ public class HardReferenceDemo {
 		// 等待一段时间，防止GC没有完成
 		Thread.sleep(3000);
 
-		System.out.println("完成GC以后...");
+		logger.info("完成GC以后...");
 
 		// 打印模拟资源是否被释放
-		System.out.println("模拟资源的引用地址为：" + test);
+		logger.info("模拟资源的引用地址为：" + test);
 	}
 
 }
