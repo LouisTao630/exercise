@@ -10,7 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
-@PropertySource("classpath:/com/louis/exercise/db/db.properties")
+@PropertySource("classpath:/com/louis/exercise/db/mysql.properties")
 public class DBConfig {
 
 	@Value("${driverClassName}")
@@ -35,8 +35,4 @@ public class DBConfig {
 		return ds;
 	}
 
-	@Bean
-	public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
-		return new PropertySourcesPlaceholderConfigurer();
-	}
 }
