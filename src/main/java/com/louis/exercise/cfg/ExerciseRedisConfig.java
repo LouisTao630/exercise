@@ -14,7 +14,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
 @PropertySource("classpath:/com/louis/exercise/db/redis.properties")
-public class RedisConfig {
+public class ExerciseRedisConfig {
 
 	@Value("${redis.host}")
 	private String host;
